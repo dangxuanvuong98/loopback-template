@@ -1,5 +1,5 @@
 {
-  "name": "loopback-template",
+  "name": "loopback_test_001",
   "version": "1.0.0",
   "main": "server/server.js",
   "engines": {
@@ -11,14 +11,16 @@
     "posttest": "npm run lint && npm audit"
   },
   "dependencies": {
+    "await-to-js": "^2.1.1",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "helmet": "^3.10.0",
+    "loopback": "^3.22.0",
     "loopback-boot": "^2.6.5",
-    "serve-favicon": "^2.0.1",
-    "strong-error-handler": "^3.0.0",
     "loopback-component-explorer": "^6.2.0",
-    "loopback": "^3.22.0"
+    "loopback-connector-mysql": "^5.4.2",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^3.17.1",
@@ -29,5 +31,5 @@
     "url": ""
   },
   "license": "UNLICENSED",
-  "description": "loopback-template"
+  "description": "loopback_test_001"
 }

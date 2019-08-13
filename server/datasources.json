@@ -1,6 +1,12 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "memory"
+  "mysql_01": {
+    "name": "mysql_01",
+    "host": "localhost",
+    "port": 3306,
+    "database": "loopback_test_001",
+    "user": "local_user_001",
+    "password": "password",
+    "connector": "mysql",
+    "collation": "utf8_unicode_ci"
   }
 }

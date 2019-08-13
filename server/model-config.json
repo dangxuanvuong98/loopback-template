@@ -4,6 +4,7 @@
       "loopback/common/models",
       "loopback/server/models",
       "../common/models",
+      "../common/models/student",
       "./models"
     ],
     "mixins": [
@@ -13,26 +14,15 @@
       "./mixins"
     ]
   },
-  "User": {
-    "dataSource": "db"
-  },
-  "AccessToken": {
-    "dataSource": "db",
-    "public": false
-  },
-  "ACL": {
-    "dataSource": "db",
-    "public": false
-  },
-  "RoleMapping": {
-    "dataSource": "db",
-    "public": false,
+  "Student": {
+    "dataSource": "mysql_01",
+    "public": true,
     "options": {
-      "strictObjectIDCoercion": true
+      "remoting": {
+        "sharedMethods": {
+          "*": true
+        }
+      }
     }
-  },
-  "Role": {
-    "dataSource": "db",
-    "public": false
   }
 }
